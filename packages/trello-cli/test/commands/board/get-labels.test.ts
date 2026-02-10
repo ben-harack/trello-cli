@@ -165,8 +165,8 @@ describe("board:get-labels", () => {
 
     const outputCall = stdoutSpy.mock.calls[0][0];
 
-    expect(outputCall).toContain("id,name,color");
-    expect(outputCall).toContain("label1,Bug,red");
-    expect(outputCall).toContain("label2,Feature,blue");
+    expect(outputCall).toContain('"id","name","color"');
+    expect(outputCall).toContain('"label1","Bug","red"');
+    expect(outputCall).toContain('"label2","Feature","blue"');
   });
 });
